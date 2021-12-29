@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Menu Principal Cempre</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/datatables/datatables.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="assets/datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css">
+</head>
+
+<body class="app sidebar-mini">
+    <!-- Navbar-->
+    <header class="app-header"><a class="app-header__logo" href=""></a>
+        <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar"
+            aria-label="Hide Sidebar"></a>
+        <!-- Navbar Right Menu-->
+        <ul class="app-nav">
+            <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown"
+                    aria-label="Open Profile Menu"><i class="fa fa fa-info"></i></a>
+            </li>
+            <!-- User Menu-->
+            <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown"
+                    aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
+                <ul class="dropdown-menu settings-menu dropdown-menu-right">
+                    <li><a class="dropdown-item" href="logout.php"><i class="fa fa-sign-out fa-lg"></i>Salir</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    <!-- Sidebar menu-->
+    <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+    <aside class="app-sidebar">
+        <div class="app-sidebar__user"><img class="app-sidebar__user-avatar"
+                src="images/logoUpc.png" width="60" height="50" alt="User Image">
+            <div>
+                <p class="app-sidebar__user-name">Administrador</p>
+                <p class="app-sidebar__user-designation">Cempre</p>
+            </div>
+        </div>
+        <ul class="app-menu">
+            <li><a class="app-menu__item" href="principal.html"><i class="app-menu__icon fa fa-home fa-lg"></i><span
+                        class="app-menu__label">Menu Principal</span></a></li>
+
+            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i
+                        class="app-menu__icon fa fa-edit"></i><span class="app-menu__label">Gestión General</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a class="treeview-item" href="RegistroEstudiante.html"><i
+                                class="icon fa fa-circle-o"></i>Registro del estudiante</a></li>
+                    <li><a class="treeview-item" href="tabla.html"><i class="icon fa fa-circle-o"></i> Listado de estudiantes</a></li>
+                    <li><a class="treeview-item" href="SolicitudPracticante.html"><i class="icon fa fa-circle-o"></i>Solicitud Practicante</a></li>
+                    <li><a class="treeview-item" href="RegistroEmpresa.html"><i class="icon fa fa-circle-o"></i>Registro Empresa</a></li>
+
+
+                </ul>
+            </li>
+        </ul>
+    </aside>
+    <main class="app-content">
+        <div class="app-title">
+            <div>
+                <h1><i class="fa fa-edit"></i> ¡PRACTICAS EMPRESARIALES CON OPCIÓN DE GRADO!</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tile">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h3>ACCESO A LA PRÁCTICA PROFESIONAL</h3>
+                            <br>
+                            <p1>Inscribirse en el Centro de Estudios Empresariales.
+            El estudiante debe llenar el formato de hoja de vida CEMPRE, con la información requerida.<BR>
+Presentar constancia de egresado o pre matricula de 10º semestre cursado  (Registro y Control).
+<a href="https://cempreupc.files.wordpress.com/2015/03/formato-hoja-de-vida-profesional.pdf">⇒ (FORMATO HOJA DE VIDA PROFESIONAL – CEMPRE)</a></p1>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tile">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h3>UBICACIÓN DE LA PRÁCTICA</h3>
+                            <br>
+                            <p1>GESTIÓN DE CONVENIO UNIVERSIDAD – EMPRESA.<br>
+
+Cempre mantiene convenios con diferentes empresas tanto privadas como oficiales,  a las cuales se envían egresados a realizar las Prácticas Empresariales.
+<br><br>
+SOLICITUD DEL EMPRESARIO.
+<br>
+Cempre le están solicitando permanentemente practicantes, empresas con las cuales se mantienen convenios abiertos.<br><br>
+GESTIÓN DEL ESTUDIANTE.
+<br>
+Se presenta cuando el estudiante por gestión propia consigue la empresa en la cual realizará su Practica Empresarial.<br>
+Nota: Todas las solicitudes de prácticas deben contener área específica y funciones del practicante las cuales deben ser afines al programa cursado.</p1>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tile">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h4>VISITA POR PARTE DEL COORDINADOR DE PRÁCTICAS A LA EMPRESA, PARA CONSTATAR SI LA EMPRESA CUMPLE CON LOS REQUISITOS  DE LA PRÁCTICA SOLICITADA.</h4>
+                            <br>
+                            <p1>El Coordinador debe practicar la visita correspondiente a la empresa y constatar si cumple con los requisitos mínimos para recibir el practicante</p1>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tile">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h4>PRESENTAR LA SOLICITUD AL COMITÉ DE PRÁCTICAS EMPRESARIALES Y/O CONSEJO DE FACULTAD PARA SU APROBACIÓN.</h4>
+                            <br>
+                            <p1>El Coordinador debe someter a consideración del Comité de Prácticas Empresariales cada una de las solicitudes presentadas con el fin de que sean evaluadas por los mismos</p1>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tile">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h4>UNA VEZ APROBADA LA PRÁCTICA EL ESTUDIANTE DEBE ASISTIR A UNA INDUCCIÓN PROGRAMADA POR EL COORDINADOR DE PRACTICAS EMPRESARIALES DE CEMPRE</h4>
+                            <br>
+                            <p1>El practicante debe conocer todo lo concerniente al Centro de Estudios Empresariales, al igual la metodología utilizada para el desarrollo de los informes que deberá presentar al Cempre.
+Como también CEMPRE  le asignará un asesor de un listado suministrado por los jefes de programas académicos cursados por los egresados<br>
+Nota: la fecha de iniciación de las prácticas válida para el CEMPRE solo será a partir de la autorización del comité de prácticas
+</p1>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tile">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h4>EL PRACTICANTE DEBE CANCELAR AL MENOS EL 50% DEL VALOR DE LA PRÁCTICA A LA UNIVERSIDAD Y EL SALDO ANTES DE TERMINAR EL PERIODO DE LA PRÁCTICA.</h4>
+                            <br>
+                            <p1>Las prácticas empresariales tienen un valor de Trescientos Cuarenta y cinco mil pesos   ($ 345.0000)<br>FAVOR HACER CLIC EN EL SIGUIENTE ENLACE ESCOJA LA OPCIÓN (PRACTICAS EMPRESARIALES CEMPRE) Y EL ANOTA EL VALOR DE $ 369.150 <br>
+                                
+
+                                <a href="http://www2.unicesar.edu.co/unicesar/hermesoft/vortal/miVortal/logueo.jsp">Clic Aqui</a>
+
+</p1>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tile">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h4>DOCUMENTOS QUE DEBE ANEXAR EL PRACTICANTE</h4>
+                            <br>
+                            Carta sugiriendo el Asesor<BR>
+Certificado de la Cámara de Comercio de la Empresa<BR>
+Fotocopia cédula del representante legal de la empresa<BR>
+Nit de la empresa<BR>
+recibo de pago prácticas empresariales<BR>
+</p1>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tile">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h5>EL PRACTICANTE DEBE PRESENTAR AL COORDINADOR UN PRIMER INFORME EN LA METODOLOGÍA EXIGIDA POR EL CENTRO 75 DÍAS CALENDARIO A PARTIR DEL DÍA EN QUE INICIA LA PRÁCTICAS</h5>
+                            <br>
+                            Informe haz clic en el siguiente documento para descargar la metodología Cempre<BR>
+                            <a href="https://cempreupc.files.wordpress.com/2015/03/metodologia-informe-de-practica-de-grado-cempre.docx">⇒ (METODOLOGÍA INFORME DE PRACTICA DE GRADO – CEMPRE)</a><br><br>
+                             
+Carta del Asesor donde conste que revisó el informe, haz clic en el siguiente documento para descargar  el modelo de carta del asesor<BR>
+<a href="https://cempreupc.files.wordpress.com/2015/03/certificacion-de-asesores.docx">⇒(CERTIFICACIÓN DE ASESORES)</a><br><br>
+Carta del Empresario donde apruebe el Plan de Trabajo, haz clic en el siguiente enlace para descargar el modelo para la carta del empresario.<BR>
+<a href="https://cempreupc.files.wordpress.com/2015/03/modelo-carta-empresa.docx">⇒ (MODELO CARTA EMPRESA)</a><br><br>
+Nota: El Informe debe ser revisado por el Coordinador.<BR>
+</p1>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tile">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h4>EL CEMPRE Y EL ASESOR DEBEN PRACTICAR AL MENOS 2 VISITAS AL PRACTICANTE DURANTE EL PERIODO DE LA PRÁCTICA EMPRESARIAL.</h4>
+                            <br>
+                            <p1>
+                            El Cempre tiene diseñado como mecanismo de control, un formato de visitas el cual debe ser firmado por el funcionario del Cempre y por el Empresario, una vez se efectué la misma.
+
+                          </p1>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tile">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h4>EL PRACTICANTE DEBERÁ PRESENTAR UN SEGUNDO Y ÚLTIMO INFORME AL CEMPRE, 165 DÍAS CALENDARIO A PARTIR DEL INICIO DE SU PRÁCTICA.
+                            </h4>
+                            <br>
+                            <p1>
+                            El segundo informe o informe final debe ser presentado por el practicante 165 días calendario a partir del día en que se envió a la práctica, anexando los siguientes documentos:
+                            <br>
+                            <p1>1. Carta del Asesor donde conste que revisó y evaluó el informe</p1>
+                       
+                            <br>
+                            <p1>2. Carta del Empresario donde certifique que el practicante realizó a satisfacción las Prácticas Empresariales</p1>
+                            <br>
+
+                            <p1>3. Tres (3) evaluaciones firmadas por el Asesor, CEMPRE y Empresario.
+                           </p1>
+                            <br>
+                            <p1>4. El primer informe corregido por el Cempre.
+                           </p1>
+                            <br>
+
+                          </p1>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tile">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h4>EL COORDINADOR DE PRÁCTICAS EMPRESARIALES REVISARÁ EL INFORME Y DARÁ SU CONCEPTO DE APROBACIÓN O NEGACIÓN DEL MISMO.</h4>
+                            <br>
+                            <p1>
+                            El Coordinador de Prácticas Empresariales en pleno, revisará el informe final, enviándolo a empastar o corregir. En el caso de sugerir correcciones el Practicante deberá presentarlo nuevamente a Comité.
+
+                           </p1>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tile">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h4>ENVÍO DEL INFORME FINAL AL CONSEJO DE FACULTAD.</h4>
+                            <br>
+                            <p1>
+                            Una vez el informe cumpla con los requisitos establecidos por el Comité de Prácticas Empresariales y el CEMPRE, se autoriza al practicante empastar para remitirlo al Consejo de Facultad.
+                           </p1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tile">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h4>EVALUACIÓN POR PARTE DEL CONSEJO DE FACULTAD.</h4>
+                            
+                            <p1>
+                            Evaluado por el Consejo de Facultad el informe final, envía el nombre del egresado al Consejo Académico para autorización del grado.
+                           </p1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Essential javascripts for application to work-->
+    <script src="assets/jquery/jquery-3.3.1.min.js"></script>
+    <script src="assets/popper/popper.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/main.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+     <!--
+    <script type="text/javascript" src="js/plugins/bootstrap-notify.min.js"></script>
+     -->
+    <script type="text/javascript" src="assets/sweetalert.min.js"></script>
+    <script type="text/javascript" src="assets/datatables/datatables.min.js"></script> 
+    <!-- Page specific javascripts-->
+    <!-- Google analytics script-->
+    <script type="text/javascript">
+    if (document.location.hostname == 'pratikborsadiya.in') {
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-72504830-1', 'auto');
+        ga('send', 'pageview');
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Registro Aspirante</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/datatables/datatables.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="assets/datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css">
+</head>
+
+<body class="app sidebar-mini">
+    <!-- Navbar-->
+    <header class="app-header"><a class="app-header__logo" href=""></a>
+        <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar"
+            aria-label="Hide Sidebar"></a>
+        <!-- Navbar Right Menu-->
+        <ul class="app-nav">
+            <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown"
+                    aria-label="Open Profile Menu"><i class="fa fa fa-info"></i></a>
+            </li>
+            <!-- User Menu-->
+            <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown"
+                    aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
+                <ul class="dropdown-menu settings-menu dropdown-menu-right">
+                    <li><a class="dropdown-item" href="logout.php"><i class="fa fa-sign-out fa-lg"></i>Salir</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    <!-- Sidebar menu-->
+    <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+    <aside class="app-sidebar">
+        <div class="app-sidebar__user"><img class="app-sidebar__user-avatar"
+                src="images/logoUpc.png" width="60" height="50" alt="User Image">
+            <div>
+                <p class="app-sidebar__user-name">Administrador</p>
+                <p class="app-sidebar__user-designation">Cempre</p>
+            </div>
+        </div>
+        <ul class="app-menu">
+            <li><a class="app-menu__item" href="principal.html"><i class="app-menu__icon fa fa-home fa-lg"></i><span
+                        class="app-menu__label">Menu Principal</span></a></li>
+
+            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i
+                        class="app-menu__icon fa fa-edit"></i><span class="app-menu__label">Gestión General</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a class="treeview-item" href="RegistroEstudiante.html"><i
+                                class="icon fa fa-circle-o"></i>Registro del estudiante</a></li>
+                    <li><a class="treeview-item" href="tabla.html"><i class="icon fa fa-circle-o"></i> Listado de estudiantes</a></li>
+                    <li><a class="treeview-item" href="SolicitudPracticante.html"><i class="icon fa fa-circle-o"></i>Solicitud Practicante</a></li>
+                    <li><a class="treeview-item" href="RegistroEmpresa.html"><i class="icon fa fa-circle-o"></i>Registro Empresa</a></li>
+                    
+
+                </ul>
+            </li>
+        </ul>
+    </aside>
+    <main class="app-content">
+        <div class="app-title">
+            <div>
+                <h1><i class="fa fa-edit"></i> Registrar Aspirante</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tile">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <form id="formEstudiante">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label class="control-label">Identificación</label>
+                                            <input type="text" class="form-control" id="Identificacion"
+                                                placeholder="*Ingrese Identificación" minlength="8" maxlength="10"
+                                                pattern="[0-9]{1,12}" title="Solamente se admiten números"
+                                                required="required">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label class="control-label">Apellido(s) del aspirante</label>
+                                            <input type="text" class="form-control" id="Apellidos"
+                                            placeholder="*Ingrese Apellidos" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{1,30}" 
+                                            required="required" minlength="5" maxlength="30" title="Solamente se admiten caracteres">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label class="control-label">Nombre(s) del aspirante</label>
+                                            <input type="text" class="form-control" id="Nombres"
+                                            placeholder="*Ingrese Nombres" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{1,30}" 
+                                            required="required" minlength="3" maxlength="30" title="Solamente se admiten caracteres">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label class="control-label">Lugar de nacimiento</label>
+                                                <input type="text" class="form-control" id="lugarnacimiento"
+                                                placeholder="*Ingrese Lugar de lugar nacimiento" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{1,25}" 
+                                                required="required" minlength="4" maxlength="25" title="Solamente se admiten caracteres">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label class="control-label">Fecha de nacimiento</label>
+                                            <input class="form-control" type="date" id="fechanacimiento"
+                                                placeholder="*Ingrese Fecha de nacimiento" required="required">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label class="control-label">Genero</label>
+                                            <select class="form-control" id="genero"  required="required">
+                                                <option>Seleccione un género</option>
+                                                <option value="M">M</option>
+                                                <option value="F">F</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="control-label">Dirección de domicilio/Barrio </label>
+                                                <input type="text" class="form-control" id="direccion"
+                                                placeholder="*Ingrese Direccion" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ#/°- ]{1,60}" 
+                                                required="required" minlength="10" maxlength="60">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="control-label">Ciudad</label>
+                                                <input type="text" class="form-control" id="ciudad"
+                                                placeholder="*Ingrese ciudad" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{1,20}" 
+                                                required="required" minlength="4" maxlength="20" title="Solamente se admiten caracteres">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label class="control-label">Correo electrónico</label>
+                                            <input class="form-control" type="email" id="correo"
+                                                placeholder="*Ingrese Correo electrónico" required="required">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label class="control-label">Telefono Fijo</label>
+                                                <input type="text" class="form-control" id="telefono"
+                                                placeholder="Ingrese Telefono Fijo" maxlength="7"
+                                                pattern="[0-9]{1,7}" title="Solamente se admiten números">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label class="control-label">Celular</label>
+                                                <input type="text" class="form-control" id="celular"
+                                                placeholder="*Ingrese Celular" minlength="10" maxlength="10"
+                                                pattern="[0-9]{1,10}" title="Solamente se admiten números"
+                                                required="required">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="control-label">Nacionalidad</label> 
+                                                <input type="text" class="form-control" id="nacionalidad"
+                                                placeholder="*Ingrese Nacionalida" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{1,20}" 
+                                                required="required" minlength="8" maxlength="20" title="Solamente se admiten caracteres">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="control-label">Estado civil</label>
+                                            <select class="form-control" id="estadocivil" required="required">
+                                                <option>Seleccione un estado civil</option>
+                                                <option>Soltero/a</option>
+                                                <option>Casado/a</option>
+                                                <option>Unión libre</option>
+                                                <option>Separado/a</option>
+                                                <option>Divorciado/a</option>
+                                                <option>Viudo/a</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" id="btnGuardar" class="btn btn-success"><i
+                                            class="fa fa-fw fa-lg fa-check-circle"></i>Guardar</button>
+                                    <button type="button" id="btnLimpiar" class="btn btn-danger"><i
+                                            class="fa fa-fw fa-lg fa-times-circle"></i>Cancelar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Essential javascripts for application to work-->
+    <script src="assets/jquery/jquery-3.3.1.min.js"></script>
+    <script src="assets/popper/popper.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/main.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+     <!--
+    <script type="text/javascript" src="js/plugins/bootstrap-notify.min.js"></script>
+     -->
+    <script type="text/javascript" src="assets/sweetalert.min.js"></script>
+    <script type="text/javascript" src="assets/datatables/datatables.min.js"></script> 
+    <!-- Page specific javascripts-->
+    <!-- Google analytics script-->
+    <script type="text/javascript">
+    if (document.location.hostname == 'pratikborsadiya.in') {
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-72504830-1', 'auto');
+        ga('send', 'pageview');
+    }
+    </script>
+</body>
+
+</html>
